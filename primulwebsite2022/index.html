@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        min-height: 100vh;
+        background: #000;
+        overflow: hidden;
+    }
+    
+    i {
+        position: absolute;
+        height: 200px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: linear-gradient(45deg, #ff004b, transparent);
+        animation: animat 5s linear infinite;
+    }
+    
+    i:nth-child(3n+1) {
+        background: linear-gradient(45deg, #eb00ff, transparent);
+    }
+    
+    i:nth-child(3n+2) {
+        background: linear-gradient(45deg, #ff7b00, transparent);
+    }
+    
+    i:nth-child(3n+3) {
+        background: linear-gradient(45deg, #00ff62, transparent);
+    }
+    
+    @keyframes animat {
+        0% {
+            transform: translateY(-200px);
+        }
+        100% {
+            transform: translateY(calc(100vh + 200px));
+        }
+    }
+</style>
+
+<body>
+    <script>
+        function rain() {
+            let amount = 200;
+            let body = document.querySelector('body');
+            let i = 0;
+            while (i < amount) {
+                let drop = document.createElement('i');
+                let size = Math.random() * 5;
+                let posx = Math.floor(Math.random() * window.innerWidth);
+                let delay = Math.random() * -20;
+                let duration = Math.random() * 5;
+
+                drop.style.width = 0.2 + size + "px";
+                drop.style.left = posx + 'px';
+                drop.style.animationDelay = delay + 's';
+                drop.style.animationDuration = 1 + duration + 's';
+                body.appendChild(drop);
+                i++
+            }
+        }
+        rain();
+    </script>
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quisquam ad deserunt sit provident ex officiis distinctio nulla minus debitis earum repellat, ea facere quibusdam sunt officia laudantium hic corrupti molestias, reprehenderit repellendus
+            fuga? Veniam reprehenderit molestias molestiae accusantium quo eius totam fuga dolor inventore corporis. Totam temporibus, dicta ad iste officiis, praesentium, non quia beatae doloribus quod ducimus? Eligendi voluptatibus nobis facilis corporis
+            nisi, delectus unde consectetur nesciunt deserunt velit. Quas, architecto eos odio officiis exercitationem ea voluptates quisquam. Ipsum, sint. Officia exercitationem quibusdam accusantium molestiae, esse, voluptatem eum repudiandae pariatur
+            facilis aliquid quo iure temporibus voluptate explicabo iste aliquam deleniti doloribus sit neque praesentium excepturi cupiditate dignissimos! Doloribus provident quis architecto natus, blanditiis et ducimus illum neque asperiores, error
+            soluta eos molestiae quidem ad repellat accusantium. Sequi nam magni esse obcaecati assumenda quod neque eveniet repellat aspernatur nisi quo, voluptatibus quibusdam praesentium laboriosam delectus blanditiis veniam totam aliquam voluptas.
+            Ut veritatis quasi doloribus aperiam corrupti voluptas reiciendis impedit vitae optio amet porro alias voluptates accusamus eligendi nam saepe asperiores natus molestias dignissimos dolorum ipsa, neque debitis quam dicta. Libero ea soluta
+            dolor quibusdam dicta vel quo earum, molestiae delectus voluptas corporis, dolore fuga assumenda. Iusto quo cum et, distinctio rerum reiciendis sapiente, deleniti accusamus, itaque omnis vero animi esse fugit aliquam autem repellat veniam
+            facere vel architecto excepturi perferendis necessitatibus eligendi consequatur! Qui hic illum placeat ratione earum, rem quaerat reiciendis ut sit architecto facilis vero officiis. Eveniet delectus in provident, ea voluptatem perferendis
+            recusandae veniam minus consectetur consequatur quia earum nihil? Dicta officiis tenetur consequuntur nulla nesciunt aut sed reprehenderit porro! In id tempora consequatur, veniam amet aliquid sapiente fuga cupiditate quae alias quibusdam
+            dignissimos vel rem voluptate distinctio perferendis! Dolorum, explicabo. Aperiam maxime fugiat, veritatis in recusandae eveniet quos perspiciatis possimus incidunt expedita provident sapiente excepturi facere repudiandae a illo esse autem
+            fugit architecto tempore nihil? Fugit debitis explicabo non adipisci vitae mollitia aspernatur ab sed animi nisi magni ad inventore, iure consectetur sunt fuga ratione dolores veniam quibusdam nihil. Vel at maiores expedita itaque eveniet
+            deleniti sint facilis magni nemo quidem placeat harum odio quo rerum voluptates, autem voluptate recusandae asperiores repellendus. A voluptates repellendus incidunt sapiente consequatur cum! Minus deserunt architecto, molestias hic eius quasi
+            ipsa assumenda! Molestias, voluptatibus autem animi deserunt, iusto totam temporibus officiis soluta rem debitis rerum, accusantium repellat qui dolorem commodi ut eligendi illo provident consequatur nam in tempore cum ea? Officia minima voluptates
+            numquam eius, voluptate vero corrupti nam velit dolor molestiae hic aperiam dolorem dolore, necessitatibus rerum consequatur reprehenderit tempore veritatis? Autem rerum porro aspernatur aliquam accusamus doloremque iure illo ut! Expedita,
+            itaque? Eveniet porro et dolorem sed sint repudiandae nemo debitis quibusdam vel ratione optio earum commodi repellendus, necessitatibus, voluptates quis temporibus in nobis? Recusandae suscipit a sed non provident, reiciendis fugit impedit
+            quod, consectetur adipisci ad repellendus tempora, in placeat! Aut, eos animi maxime fugit non sequi qui voluptatem impedit ut rem labore eius veniam reiciendis atque praesentium consectetur odit harum tempore. Quod fugiat veniam maiores aspernatur,
+            aut animi, perspiciatis minima quis magnam quo consequatur! Officiis, eum? Praesentium in error aliquid, quis ab alias at impedit magnam. Unde doloribus molestiae facilis natus iure! Quidem, nam nihil sunt, esse harum et, modi repellat recusandae
+            cum consectetur nesciunt nostrum ex quia vero quos facere praesentium suscipit repudiandae error? Eum atque excepturi minus molestias commodi doloremque nulla facere eos aliquam optio eaque, nisi ducimus modi ipsa, dignissimos fugit. Est a
+            facilis explicabo sequi velit praesentium provident, perferendis excepturi mollitia rem dolor rerum minima possimus ullam neque itaque officiis natus odit fugiat illo sint porro labore nulla! Exercitationem quia minus qui porro culpa quas
+            doloribus tenetur fugiat dolore illo nostrum tempore sunt libero natus, ipsam eum dolorum laudantium facilis animi? Maiores autem amet quae ducimus minus ex sapiente laudantium magnam ratione aspernatur nam, veniam maxime, aliquid id ut ab!
+            Odio, ea alias saepe, accusantium esse nihil, magni quas delectus maiores dignissimos velit atque soluta dicta? Dolorum, nisi. Corrupti numquam in dolorem reiciendis dignissimos. Eos impedit est quaerat nesciunt quae explicabo praesentium
+            laudantium consectetur veniam? Recusandae, reprehenderit odit laudantium ullam quos consequuntur rerum culpa provident aut nobis amet, iusto cumque? Perferendis adipisci quo, ea nesciunt minima perspiciatis ut fuga consectetur pariatur asperiores,
+            sapiente eius libero, eaque iusto corrupti autem vero eligendi illum! Voluptatum, asperiores amet rerum ex impedit, facilis, iusto error placeat ducimus nobis sit vero ullam mollitia. Sunt deserunt dolorem aut libero ratione neque dignissimos.
+            Repudiandae facere quia enim possimus! Architecto debitis possimus, illum eum provident aut nobis at laudantium rem in cum non asperiores quisquam deleniti accusamus blanditiis sed doloremque eos optio dignissimos necessitatibus placeat delectus
+            labore ea. Excepturi laudantium maxime perferendis doloremque nisi, debitis quisquam officiis deserunt pariatur minima sint velit incidunt, odit asperiores! Ut, velit? Ex temporibus amet mollitia, veniam aut dignissimos aliquid aspernatur.
+            Fugit ducimus maiores vel nihil necessitatibus beatae, enim cumque tempora suscipit deleniti aperiam obcaecati, doloremque rerum eveniet quaerat tenetur laboriosam vero perferendis neque animi! Dolores voluptates molestias tempore veritatis
+            quia non sequi, minus asperiores sapiente! Voluptas, unde fugiat nostrum molestias est aspernatur! Cupiditate optio exercitationem consequatur earum quas placeat dignissimos quos quia numquam eveniet dolores doloribus, id possimus recusandae
+            doloremque laborum laudantium eaque. Eos consequuntur delectus recusandae eum eligendi? Veritatis, nobis consequuntur? Est praesentium qui asperiores esse ex sapiente harum officia omnis necessitatibus dolorum culpa maiores earum, itaque ipsa
+            quod iure quis aliquam illo voluptatibus ut minima possimus eos? Expedita, sequi libero? Corporis facere dignissimos debitis repudiandae beatae distinctio, hic asperiores natus, fuga soluta laborum culpa accusamus temporibus veritatis ducimus,
+            possimus error aperiam expedita aliquam nostrum molestias minima reiciendis. Vitae ipsa facilis amet et id itaque dignissimos harum repudiandae dolor suscipit vero animi eos doloribus ducimus fugiat nisi, dolore unde tempore debitis quas nam
+            est fugit nobis. Soluta maiores temporibus tenetur explicabo voluptas in corporis voluptatibus corrupti praesentium possimus, adipisci maxime aspernatur magni tempora assumenda nisi ullam impedit consequuntur? Dolore ratione aut, debitis architecto
+            consequatur voluptas eum consequuntur beatae eius reiciendis error sunt fugit suscipit ducimus aspernatur quibusdam illo cupiditate harum iste. Velit.
+        </p>
+    </section>
+</body>
+
+</html>
